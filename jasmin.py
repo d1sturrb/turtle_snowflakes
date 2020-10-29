@@ -9,11 +9,13 @@ turtle.Screen().bgcolor("grey")
 #create a list of clours
 colours = ["cyan", "purple", "white", "blue", "yellow", "orange", "red", "pink", "green"]
 
+#move the pen in starting position
 elsa.penup()
 elsa.forward(90)
 elsa.left(45)
 elsa.pendown()
 
+#create one branch of the snowflake
 def branch():
     for i in range(3):
         for i in range(3):
@@ -26,6 +28,7 @@ def branch():
     elsa.right(90)
     elsa.forward(90)
 
+#draw branch 8 times
 for i in range(8):
     branch()
     elsa.color(random.choice(colours))
